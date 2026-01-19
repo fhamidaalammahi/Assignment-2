@@ -18,13 +18,13 @@
 .color-gra{
  
   background: -webkit-linear-gradient(#FB09B4 ,#9100F8);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .color-gradient{
  
   background: -webkit-linear-gradient( #FB09B4 50% ,#9100F8 20%, #F7E93F 80%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .color-white{
@@ -46,7 +46,7 @@
     background: #F7E93F;
     background: linear-gradient(30deg, rgba(247, 233, 63, 1) 15%, rgba(251, 9, 180, 1) 50%, rgba(145, 0, 248, 1) 100%);  
     border: none;
-    gap: 4px;
+    margin: 32px 0px 120px;
     padding: 12px 20px 12px 48px;
     border-radius: 10000px;
     font-size: 16px;
@@ -62,7 +62,7 @@
     font-size: 16px;
     font-weight: 600;
     color: #00FF88;
-    margin: 32px 17px 120px;
+    margin: 32px 0px 120px;
     cursor: pointer;
 }
 header{
@@ -78,6 +78,7 @@ nav{
     align-items: center;
     margin-right: 180px;
     margin-left: 180px;
+    
 
 }
 nav .menu{
@@ -99,40 +100,120 @@ nav .menu a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 #banner-sec{
-
-  
-}
-.hero{
-        margin: 0 auto;
-    align-items:center ;
     background-image: url(../assets/hero-bg.png);
     background-repeat: no-repeat;
-    height: 100vh;
     background-position: center;
     background-size: cover;
-    display: flex;
-    justify-content:center;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;       
+    text-align: center;
 }
+
+
+.hero{
+    border-top:1px solid #412567;
+    
+}
+.hero img{
+    width: 350px;
+    height: 350px;
+    margin-top: 101px;
+    margin-bottom: 40px;
+    background-position: center;
+    background-size: cover;
+}
+.micro{
+    position: absolute;
+    top: 38%;
+    left: 46%;
+    width: 120px;
+}
+
+
+.btnwrap{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+
 .text h1{
 
-    font-size: 72px;
-    font-weight: 700;
-    margin-bottom: 16px;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 8px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    color: rgb(255, 255, 255);
     
 }
 .text p{
-font-size: 18px;
+font-size: 16px;
+font-weight: 400;
 margin: 0 auto;
-line-height: 24px;
-width: 673px;
 text-align: center;
-color: rgba(255, 255, 255, 1);
+color: rgba(255, 255, 255, 0.808);
+}
+#about-sec{
+    height: 646px;
+    width: 1600px;
+    gap: 80px;
+    padding: 50px 200px 120px 200px;
+    background-color: #1A0B2E;
+}
+.about{
+    width: 1200px;
+    height: 222px;
+}
+.about-h1{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px ;
+}
+.about-p{
+ width: 800px;   
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+margin: 0 auto;
+text-align: center;
+color: rgba(255, 255, 255, 0.808);
+
+}
+.rating{
+    border-top:1px solid #ffffff10;
+    gap: 24px;
+    display: flex;
+    justify-content: center;
+     width: 85%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 120px;
 }
 
+.num{
 
-  
+    margin: 0 auto;
+    text-align: center;
+}
+.num h1{
+color: #00FF88;
+margin-top: 70px;
+margin-bottom: 16px;
+font-weight: 900;
+}
+.num p{
+width: 240px;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+color: rgba(255, 255, 255, 0.808);
+}
