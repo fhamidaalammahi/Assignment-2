@@ -116,6 +116,7 @@ nav .menu a{
 
 .hero{
     border-top:1px solid #412567;
+    width: 100%;
     
 }
 .hero img{
@@ -130,7 +131,7 @@ nav .menu a{
     position: absolute;
     top: 38%;
     left: 46%;
-    width: 120px;
+    
 }
 
 
@@ -161,8 +162,7 @@ text-align: center;
 color: rgba(255, 255, 255, 0.808);
 }
 #about-sec{
-    height: 646px;
-    width: 1600px;
+
     gap: 80px;
     padding: 50px 200px 120px 200px;
     background-color: #1A0B2E;
@@ -179,7 +179,7 @@ color: rgba(255, 255, 255, 0.808);
     margin-bottom: 16px ;
 }
 .about-p{
- width: 800px;   
+width: 1200px;   
 font-size: 16px;
 font-weight: 400;
 line-height: 20px;
@@ -193,10 +193,9 @@ color: rgba(255, 255, 255, 0.808);
     gap: 24px;
     display: flex;
     justify-content: center;
-     width: 85%;
-    max-width: 1360px;
+    max-width: 1600px;
     margin: 0 auto;
-    padding: 0 120px;
+    
 }
 
 .num{
@@ -216,4 +215,216 @@ font-size: 16px;
 font-weight: 400;
 line-height: 20px;
 color: rgba(255, 255, 255, 0.808);
+}
+#choose{
+    padding: 120px 280px 120px 280px;
+    background-color: #230E3D;
+}
+.layout1{
+color: #ffffff;
+font-size: 30px;
+font-weight: 700;
+display: flex;
+justify-content: center;
+
+}
+.layout>*{
+    border: 3px solid rgba(53, 17, 101, 0.4);
+    background-color:  rgba(53, 17, 101, 0.4);
+    padding: 30px;
+    width: 200px;
+    
+    
+    
+}
+.layout2{
+    grid-area: layout2;
+    border-radius: 30px;
+    width: 280px;
+    height: 380px; 
+}
+.layout2 h4{
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: rgb(255, 255, 255);
+}
+.layout3{
+    grid-area: layout3;
+    border-radius: 30px;
+    width: 720px;
+    height: 180px;
+    
+}
+.layout3 h4{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: rgb(255, 255, 255);
+}
+.layout4{
+    grid-area: layout4;
+    border-radius: 30px;
+    width: 720px;
+    height: 180px;
+    
+}
+.layout5{
+    grid-area: layout5;
+    border-radius: 30px;
+    width: 670px;
+    height: 250px;
+    
+}
+.layout6{
+    grid-area: layout6;
+    border-radius: 30px;
+    width: 330px;
+    height: 250px;
+    
+}
+.layout{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "layout1 layout1 layout1"
+    "layout2 layout3 layout3"
+    "layout2 layout4 layout4"
+    "layout5 layout5 layout6"
+    
+}
+#featured-meet{
+    padding: 120px 0px 120px 0px;
+    background-color: #1A0B2E;
+    
+}
+.caption h3{
+    font-size: 38px;
+    font-weight: 700;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.card{
+   
+    gap: 30px;
+    display: flex;
+    width: 1100px;
+    height: 440px;
+    margin: 0 auto;
+    justify-content: space-between;
+    
+    
+}
+.card1{
+position: relative;
+    width: 380px;
+    height: 226px;
+}
+.card1 h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+.card1 p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #ffffff60;
+    margin-bottom: 12px;
+}
+.clock{
+ display: flex;
+ gap: 6px;
+}
+.card1 h4{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #00FF88;
+}
+.card2{
+position: relative;
+    width: 380px;
+    height: 226px;
+}
+.card2 h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+.card2 p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #ffffff60;
+    margin-bottom: 12px;
+}
+.clock{
+ display: flex;
+ gap: 6px;
+}
+.card2 h4{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #00FF88;
+}
+.card3{
+position: relative;
+    background-position: center;
+    background-size: cover;
+    width: 380px;
+    height: 226px;
+}
+.card3 h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+.card3 p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #ffffff60;
+    margin-bottom: 12px;
+}
+.clock{
+ display: flex;
+ gap: 6px;
+}
+.card3 h4{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #00FF88;
+}
+.card-img{
+    
+    width: 340px;
+    height: 200px;
+}
+.round-img{
+
+position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width: 576px){
+    .logo, .nav, .nav .menu ,nav .menu a, .banner-sec, .btnwrap, .text h1{
+        flex-direction: column;
+    }
 }
