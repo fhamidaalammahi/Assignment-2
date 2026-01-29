@@ -9,6 +9,7 @@
   font-optical-sizing: auto;
 }
 .logo{
+   
      height: 32px;
      font-size: 25px;
      display: flex;
@@ -71,7 +72,6 @@ header{
 }
 
 nav{
-   
     height: 92px;
     margin: auto;
     display: flex;
@@ -86,9 +86,8 @@ nav .menu{
     display: flex;
     list-style-type: none;
     gap: 32px;
-    align-items: center;
-    margin: 0 auto;
-    text-align: center;
+    margin-right: 100px;
+    
     
 }
 nav .menu a{
@@ -98,10 +97,11 @@ nav .menu a{
     color: rgba(255, 255, 255, 0.904);
     opacity: 90%;
     text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
     
+}
+nav .hamburger{
+    display: none;
 }
 #banner-sec{
     background-image: url(../assets/hero-bg.png);
@@ -518,8 +518,146 @@ footer{
     margin-bottom: 120px;
     color: rgba(255, 255, 255, 0.603);
 }
-@media screen and (max-width: 576px){
-    .logo, .nav, .nav .menu ,nav .menu a, .banner-sec, .btnwrap, .text h1{
-        flex-direction: column;
-    }
+.hide{
+    display: none !important;
 }
+
+@media screen and (max-width: 576px){
+  nav {
+    margin: 0 16px;
+  }
+
+  nav .menu {
+    display: none;
+  }
+
+  nav .btn {
+    display: none;
+  }
+
+  nav .hamburger {
+    display: block;
+    color: white;
+    font-size: 24px;
+  }
+  #banner-sec {
+    padding: 0 16px;
+  }
+
+  .hero img {
+    width: 220px;
+    height: 220px;
+    margin-top: 60px;
+  }
+
+  .micro {
+    top: 24%;
+    left: 40%;
+    transform: translateX(-50% -20%);
+  }
+
+  .text h1 {
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+
+  .text p {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 12px;
+    margin-bottom: 24px;
+  }
+
+  .btnwrap {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .btn1,
+  .btn2 {
+   
+    margin: 0;
+  }
+   #about-sec {
+    padding: 40px 16px;
+  }
+
+  .about,
+  .about-p {
+    width: 100%;
+  }
+
+  .about-p br {
+    display: none;
+  }
+
+  .about-h1 h1 {
+    font-size: 32px;
+  }
+    .rating {
+    flex-wrap: wrap;
+  }
+
+  .num {
+    width: 50%;
+    margin-bottom: 24px;
+  }
+    #choose {
+    padding: 40px 16px;
+  }
+
+  .layout {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .layout > * {
+    width: 100%;
+    height: auto;
+  }
+    .card {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-img {
+    width: 100%;
+    height: auto;
+  }
+    .host {
+    flex-direction: column;
+    text-align: center;
+  }
+.host-sec{
+ margin: 20px ;  
+ 
+}
+  .picture img {
+    width: 150px;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+    .icon2 {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .tech h1 {
+    font-size: 36px;
+  }
+}
+
+
+
+
