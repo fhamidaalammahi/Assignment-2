@@ -55,6 +55,11 @@
     color: white;
     cursor: pointer;
 }
+.spotify{
+    position: absolute;
+     right: 58.6%; 
+     bottom:2.6%;
+}
 .btn2{
     background-color: transparent;
     padding: 12px 20px 12px 48px;
@@ -66,6 +71,13 @@
     margin: 32px 0px 120px;
     cursor: pointer;
 }
+.message{
+    position: absolute;
+     left: 52.9%; 
+     bottom:3%;
+    
+}
+
 header{
     background: #1A0B2E
     
@@ -103,6 +115,10 @@ nav .menu a{
 nav .hamburger{
     display: none;
 }
+nav .arrow{
+    position: absolute;
+    left: 86.6%;
+}
 #banner-sec{
     background-image: url(../assets/hero-bg.png);
     background-repeat: no-repeat;
@@ -130,16 +146,41 @@ nav .hamburger{
 }
 .micro{
     position: absolute;
-    top: 38%;
+    top: 36%;
     left: 46%;
     
 }
 
+.micro span {
+  background-color: #00ff88;
+  color: black;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 1000px;
+  display: inline-block;
+  position: absolute;
+  left: 130px;
+  top: -70px;
+  cursor: pointer;
+  box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+  animation:pulse 1.5s infinite;
+}
 
-.btnwrap{
-    display: flex;
-    justify-content: center;
-    gap: 8px;
+@keyframes pulse{
+
+    0%{
+        box-shadow:0 0 0 0 rgba(0,255,136,0.7);
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.1);
+    }
+
+    100%{
+        box-shadow:0 0 0 12px rgba(0,255,136,0);
+        transform:scale(1);
+    }
 
 }
 
@@ -160,8 +201,9 @@ font-size: 16px;
 font-weight: 400;
 margin: 0 auto;
 text-align: center;
-color: rgba(255, 255, 255, 0.808);
+color: rgba(255, 255, 255, 0.788);
 }
+
 #about-sec{
 
     gap: 80px;
@@ -190,7 +232,7 @@ color: rgba(255, 255, 255, 0.808);
 
 }
 .rating{
-    border-top:1px solid #ffffff10;
+    border-top:1px solid #ffffff25;
     gap: 24px;
     display: flex;
     justify-content: center;
@@ -243,9 +285,11 @@ justify-content: center;
     border-radius: 30px;
     width: 280px;
     height: 380px; 
+    color: rgba(255, 255, 255, 0.514);
+    margin-bottom: 16px;
 }
 .layout2 h4{
-    font-size: 19px;
+    font-size: 24px;
     font-weight: 700;
     margin-bottom: 16px;
     color: rgb(255, 255, 255);
@@ -255,6 +299,7 @@ justify-content: center;
     border-radius: 30px;
     width: 720px;
     height: 180px;
+    color: rgba(255, 255, 255, 0.514);
     
 }
 .layout3 h4{
@@ -268,21 +313,41 @@ justify-content: center;
     border-radius: 30px;
     width: 720px;
     height: 180px;
+     color: rgba(255, 255, 255, 0.514);
     
+}
+.layout4 h4{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: rgb(255, 255, 255);
 }
 .layout5{
     grid-area: layout5;
     border-radius: 30px;
     width: 670px;
     height: 250px;
+     color: rgba(255, 255, 255, 0.514);
     
+}
+.layout5 h4{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: rgb(255, 255, 255);
 }
 .layout6{
     grid-area: layout6;
     border-radius: 30px;
     width: 330px;
     height: 250px;
-    
+     color: rgba(255, 255, 255, 0.514);
+}
+.layout6 h4{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: rgb(255, 255, 255);
 }
 .layout{
     display: grid;
@@ -357,7 +422,7 @@ position: relative;
 position: relative;
     width: 370px;
     height: 440px;
-   
+     border-radius: 30px;
     background-color: #230E3D;
 }
 .card2 h3{
@@ -377,7 +442,20 @@ position: relative;
 .clock{
  display: flex;
  gap: 6px;
+ height: 20px;
+ width: 20px;
 }
+
+.clockk{
+     display: flex;
+      gap: 6px;
+      align-items: center;
+}
+.feature-border{
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
 .card2 h4{
     font-size: 16px;
     font-weight: 600;
@@ -391,6 +469,7 @@ position: relative;
     width: 370px;
     height: 440px;
     background-color: #230E3D;
+      border-radius: 30px;
 }
 .card3 h3{
     font-size: 24px;
@@ -417,7 +496,7 @@ position: relative;
     color: #00FF88;
 }
 .card-img{
-    
+      border-radius: 30px;
     width: 345px;
     height: 200px;
 }
@@ -472,12 +551,22 @@ margin-bottom: 16px;
 .picture{
 margin: 40px 24px 40px 40px;
 }
+.icons{
+
+    gap:14px; 
+
+
+}
 .icons img{
-width: 20px;
-height: 20px;
-box-sizing: border-box;
+width:32px;
+height:32px;
+padding:7px;
+border-radius:40%;
+object-fit:contain;
 border: 1px solid rgba(83, 60, 114, 1);
-border-radius: 19px;
+
+    
+
 
 }
 footer{
@@ -513,6 +602,11 @@ footer{
     align-items: center;
     gap: 8px;
 }
+.name{
+        display: flex;
+    align-items: center;
+    gap: 8px;
+}
 .copyright{
     margin-top: 32px;
     margin-bottom: 120px;
@@ -524,7 +618,7 @@ footer{
 
 @media screen and (max-width: 576px){
   nav {
-    margin: 0 16px;
+    margin: 0 20px 0 20px;
   }
 
   nav .menu {
@@ -540,37 +634,61 @@ footer{
     color: white;
     font-size: 24px;
   }
-  #banner-sec {
-    padding: 0 16px;
-  }
+ nav .arrow{
+    display: none;
+ }
+#banner-sec{
+    background-image: url(../assets/respon_banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;       
+    text-align: center;
+    height: 570px;
+}
 
   .hero img {
-    width: 220px;
-    height: 220px;
-    margin-top: 60px;
+    width: 250px;
+    height: 250px;
+    margin-top: 40px;
+    margin-bottom: 24px;
   }
 
   .micro {
-    top: 24%;
-    left: 40%;
+    top: 31%;
+    left: 44.5%;
     transform: translateX(-50% -20%);
   }
+  .micro-img{
+    width: 60px;
+    height: 85px;
+}
+.micro span {
+
+  left: 80px;
+  top: -70px;
+
+}
 
   .text h1 {
-    font-size: 40px;
+    font-size: 55px;
+    font-weight: 800;
     margin-bottom: 8px;
   }
 
   .text p {
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 400;
-    padding: 0 12px;
+    padding: 0 20px;
     margin-bottom: 24px;
   }
 
   .btnwrap {
     flex-direction: row;
     gap: 8px;
+    margin-bottom: 40px;
   }
 
   .btn1,
@@ -578,32 +696,61 @@ footer{
    
     margin: 0;
   }
+  .spotify{
+    position: absolute;
+     top: 84.2%; 
+     left: 23.3%;
+}
+  .message{
+    position: absolute;
+    left: 58.6%;
+    top: 84.5%; 
+     
+ }
+
    #about-sec {
-    padding: 40px 16px;
+    padding: 70px 20px 40px 20px;
+  
+    
   }
 
-  .about,
-  .about-p {
+  .about {
     width: 100%;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.692);
+  } 
+   .about-h1 h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 50px;
   }
-
-  .about-p br {
-    display: none;
+  .about-p{
+    height: 200px;
+    width: 500px;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 50px;
+    color: rgba(255, 255, 255, 0.692)
+    
   }
-
-  .about-h1 h1 {
-    font-size: 32px;
-  }
-    .rating {
-    flex-wrap: wrap;
-  }
+ .rating{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    text-align: center;
+    margin-top: 140px;
+}
 
   .num {
-    width: 50%;
-    margin-bottom: 24px;
+    width: 100%;
+    margin-top: 24px;
   }
     #choose {
     padding: 40px 16px;
+
   }
 
   .layout {
@@ -611,27 +758,33 @@ footer{
     flex-direction: column;
     gap: 16px;
   }
+  .layout1{
+    margin-bottom: 16px;
+  }
 
   .layout > * {
     width: 100%;
     height: auto;
+    
   }
     .card {
     flex-direction: column;
     width: 100%;
     height: auto;
+    padding:0 20px 16px 20px;
   }
 
   .card1,
   .card2,
   .card3 {
     width: 100%;
-    height: auto;
+    height: 380px;
+    
   }
 
   .card-img {
-    width: 100%;
-    height: auto;
+    width: 537px;
+    height: 210px;
   }
     .host {
     flex-direction: column;
@@ -641,22 +794,48 @@ footer{
  margin: 20px ;  
  
 }
+.host p{
+width: 400px;
+height: 160px;
+}
   .picture img {
     width: 150px;
+    
   }
 
   .icons {
-    justify-content: center;
-  }
-    .icon2 {
-    flex-direction: column;
-    gap: 16px;
+    margin-bottom: 14px;
+    align-items:center;
   }
 
-  .tech h1 {
-    font-size: 36px;
+  .footer{
+         background-image: url('../assets/footer.choto.png');
+        background-size: cover;
+        background-position: center;
+        padding: 40px 15px;
   }
+
+ .tech h1 {
+        font-size: 36px;
+        margin-bottom: 16px;
+    }
+
+    .icon2 {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .social {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .copyright {
+        margin-bottom: 40px;
+        font-size: 12px;
+    }
 }
+
 
 
 
